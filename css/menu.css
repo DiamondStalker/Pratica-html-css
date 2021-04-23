@@ -1,0 +1,85 @@
+body {
+   background: #f7f7f7 url("https://38.media.tumblr.com/c026c2203f47be8d0f3fb81f6c5aee25/tumblr_n2hutxfrNr1tubinno1_1280.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Roboto";
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: #e74c3c;
+  /* IE Fallback */
+  background: rgba(67, 74, 84, 0.8);
+  width: 100%;
+  height: 100%;
+}
+nav {
+  /* Al darle un tamaño del 50% para que quede centrado le damo un margin lef del 25% para que a cada lado tenga 25%*/
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 50px;
+  text-align: center;
+}
+nav ul {
+  background: #48cfad;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 7%;
+  text-align: center;
+}
+nav ul li:first-child a {
+  background: #37bc9b;
+  width: 49px;
+  padding: 15px 0;
+}
+nav ul li:last-child {
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  background: #48cfad;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+nav ul li a:hover {
+  background: #37bc9b;
+}
+
+nav ul li ul li {
+  display: block;
+  width: auto;
+  margin: 0;
+  text-align: left;
+}
+nav ul li ul li a {
+  display: block;
+  background: #3a3a3a;
+  padding: 10px 15px;
+}
+nav ul li ul li a:first-child {
+  background: #3a3a3a;
+  width: auto;
+  border-left: 4px solid transparent;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+nav ul li ul li a:hover {
+  background: #333;
+  border-left: 4px solid #48cfad;
+}
